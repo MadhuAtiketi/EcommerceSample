@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Login </title>
+  {% load static %}
+  <link rel="stylesheet" href="{%static 'shop/css/reset.css'%}">
+
+    <link rel="stylesheet" href="{%static 'shop/css/style_login.css'%}" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="wrap">
+		<div class="avatar">
+      <img src="http://cdn.ialireza.me/avatar.png">
+		</div>
+	  <form action="" method="post"> {% csrf_token %}
+		<input type="text" placeholder="username" name = "username" required>
+		<div class="bar">
+			<i></i>
+		</div>
+		<input type="password" placeholder="password" name = "password" required>
+		<a href="" class="forgot_link">forgot ?</a>
+		<button>Sign in</button>
+	  </form>
+	</div>
+
+  <script src="{% static 'shop/js/index.js' %}"></script>
+
+</body>
+
+</html>
